@@ -1,0 +1,11 @@
+<h1>Prop List</h1>
+
+<div *ngFor="let prop of proposals">
+  <h3>{{ prop.customer }}</h3>
+  <h4>{{ prop.portfolio_url }}</h4>
+  <p>Tools to use: {{prop.tools}}</p>
+  <p>Estimated Hours: {{prop.estimated_hours}}</p>
+  <p>Hourly Rate:{{prop.hourly_rate}}</p>
+  <p>Weeks to complete: {{prop.weeks_to_complete}}</p>
+  <p>Client Email: {{prop.client_email}}</p>
+</div>
