@@ -16,21 +16,21 @@ var DocumentsComponent = /** @class */ (function () {
                 description: "asdfasdfasfd asdf asdfasdf",
                 file_url: "https://www.google.com",
                 updated_at: "09/05/17",
-                image_url: "https://www.colton-mathews.com"
+                image_url: "https://www.spiderg.com/wp-content/uploads/2016/11/1-11.jpg"
             },
             {
                 title: "My Second Doc",
                 description: "asdfasdfasfd asdf asdfasdf",
                 file_url: "https://www.google.com",
                 updated_at: "09/05/17",
-                image_url: "https://www.colton-mathews.com"
+                image_url: "https://qph.ec.quoracdn.net/main-qimg-edafb5dc2318160e8791a4207315e799-c"
             },
             {
                 title: "My Third Doc",
                 description: "asdfasdfasfd asdf asdfasdf",
                 file_url: "https://www.google.com",
                 updated_at: "09/05/17",
-                image_url: "https://www.colton-mathews.com"
+                image_url: "https://dragonlaw.io/wp-content/uploads/2017/05/Freelancer.png"
             }
         ];
     }
@@ -38,7 +38,8 @@ var DocumentsComponent = /** @class */ (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'documents',
-            templateUrl: 'documents.component.html'
+            templateUrl: 'documents.component.html',
+            styleUrls: ['documents.component.scss']
         })
     ], DocumentsComponent);
     return DocumentsComponent;
