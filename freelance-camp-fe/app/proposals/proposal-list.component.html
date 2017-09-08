@@ -1,11 +1,13 @@
-<h1>Proposal List</h1>
-
-<div *ngFor="let proposal of proposals">
-   <a routerLink="/proposal/{{proposal.id}}">{{ proposal.customer }}</a>
-  <h4>{{ proposal.portfolio_url }}</h4>
-  <p>Tools to use: {{proposal.tools}}</p>
-  <p>Estimated Hours: {{proposal.estimated_hours}}</p>
-  <p>Hourly Rate:{{proposal.hourly_rate}}</p>
-  <p>Weeks to complete: {{proposal.weeks_to_complete}}</p>
-  <p>Client Email: {{proposal.client_email}}</p>
+<div class="container">
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <h1>Proposal List</h1></a>
+    <span *ngFor="let proposal of proposals" class="list-group-item list-group0item0action">
+      <a routerLink="/proposal/{{proposal.id}}" class="proposal-link">
+        <h5 class="mb-1">{{proposal.customer}}</h5>
+        <p class="mb-1">${{ proposal.hourly_rate * proposal.estimated_hours}}</p>
+        <small class="text-muted">Estimated time to complete: {{proposal.weeks_to_complete}} Weeks.</small>
+      </a>
+    </span>
+  </div>
 </div>
